@@ -1,0 +1,673 @@
+body {
+  /*font-family: 'Baloo Bhaina';*/
+  font-family: Lato;
+  position: relative;
+  font-size: 100%;
+  background-color: gold;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(gold, lemonchiffon, white);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(gold, lemonchiffon, white);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(gold, lemonchiffon, white);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(gold, lemonchiffon, white);
+  /* Standard syntax */
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+html {
+  overflow-x: hidden!important;
+}
+
+body {
+  overflow: hidden!important;
+}
+
+::-webkit-scrollbar {
+  z-index: 1;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  transition: background 1s;
+  background-color: honeydew;
+  border: .1em solid black;
+  border-radius: 5%;
+}
+
+p::first-letter {
+  font-size: 1.5em;
+}
+
+.invertScrollBar::-webkit-scrollbar-thumb {
+  background-color: black;
+  border: .1em solid honeydew;
+  border-radius: 5%;
+}
+
+#tacoImage {
+  float: left;
+  margin-top: 1.5em;
+}
+
+#mainHeader {
+  background-color: honeydew;
+  display: inline-block;
+  position: fixed;
+  width: 100vw;
+  height: 75px;
+  max-height: 75px;
+  margin: 0 auto;
+  z-index: 15;
+  box-shadow: 0px 0px 2px 3px black;
+}
+
+#headTitle {
+  right: 0;
+  font-size: 4em;
+}
+
+#headTitlePage {
+  text-align: center;
+  font-size: 4em;
+  display: none;
+  color: black;
+}
+
+#links {
+  display: inline-block;
+  width: auto;
+  right: 7%;
+  top: 7%;
+  position: absolute;
+  transform: scale(1.2);
+}
+
+#mobileDropdown {
+  position: absolute;
+  right: 10%;
+  top: 7%;
+  display: none;
+}
+
+#dropTitle {
+  background-color: royalblue;
+  color: white;
+}
+
+.ddButton {
+  font-size: 1.2em;
+  outline: none!important;
+  background-color: inherit;
+  border: none!important;
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.ddButton:hover {}
+
+.ddList {
+  text-align: center;
+}
+
+.ddList:hover {
+  background-color: black;
+  color: white;
+}
+
+#home,
+#whoAre,
+#canHelp,
+#contact,
+#testimonial,
+#dropdown {
+  color: black;
+  border-radius: 10%;
+  border: none!important;
+  background-color: transparent;
+  transition: background-color .12s ease-in-out;
+  font-size: 1.5em;
+  outline: none!important;
+  outline-color: none!important;
+}
+
+#dropDown {
+  display: none;
+}
+
+#home:hover,
+#whoAre:hover,
+#canHelp:hover,
+#contact:hover,
+#testimonial:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#home:hover {
+  background-color: gold;
+}
+
+#whoAre:hover {
+  background-color: rgb(255, 234, 111);
+}
+
+#canHelp:hover {
+  background-color: rgb(255, 250, 206);
+}
+
+#testimonial:hover {
+  background-color: rgb(255, 253, 232);
+}
+
+#contact:hover {
+  background-color: white;
+}
+
+#dropdown:hover {
+  background-color: white;
+}
+
+#home:active,
+#whoAre:active,
+#canHelp:active,
+#contact:active,
+#testimonial:active {
+  background-color: transparent!important;
+  transform: scale(1.1);
+}
+
+.message {
+  position: relative;
+  background-color: inherit;
+  width: 95vw;
+  margin: 0 auto;
+  margin-top: calc(25vh + 75px);
+  text-align: center;
+  padding: 10px;
+  font-size: 3em;
+}
+
+#intro {
+  margin-top: 75px;
+  color: maroon;
+}
+
+#parallax1 {
+  background: url("http://i347.photobucket.com/albums/p460/jx2bandito/Tacos_zpsnlpge3ci.jpg");
+  animation: invertColors 10s forwards;
+}
+
+@keyframes invertColors {
+  0% {
+    filter: invert(0);
+  }
+  100% {
+    filter: invert(1);
+  }
+}
+
+#parallax2 {
+  background: url("http://i347.photobucket.com/albums/p460/jx2bandito/people-309097_1280_zpsif6xy8wq.png");
+}
+
+#parallax3 {
+  background: url("http://i347.photobucket.com/albums/p460/jx2bandito/Hike_zpsmjws9aat.jpg");
+}
+
+.parallax {
+  position: relative!important;
+  margin: 0 auto;
+  background-size: cover!important;
+  z-index: 10;
+  border-radius: 5%;
+  width: 95vw;
+  height: 30vw;
+  background-attachment: fixed!important;
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+}
+
+.noParallax {
+  background-attachment: scroll!important;
+}
+
+#whoWeAre,
+#weHelp {
+  position: relative;
+  display: inline-block;
+  height: auto;
+}
+
+#whoMessage1,
+#helpMessage2 {
+  float: left;
+  position: relative;
+  top: 0;
+  transform-origin: center;
+  transform: translate3d(101vw, 0, 0);
+  transition: all 1s ease-out;
+  z-index: 1;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+#whoMessage1 {
+  color: royalblue;
+  left: 5vw;
+  font-size: 2.5em;
+  transform: translate3d(0, 40vw, 0);
+}
+
+#helpMessage1 {
+  color: royalblue;
+  font-size: 2.5em;
+}
+
+#whoMessage2 {
+  float: right;
+  position: relative;
+  transform-origin: center;
+  transform: translate3d(-101vw, 0, 0);
+  margin-left: 10vw;
+  margin-right: 10vw;
+  transition: all 1s ease-out;
+  z-index: 1;
+}
+
+#helpMessage1 {}
+
+.transformView {
+  position: relative!important;
+  transform: none!important;
+}
+
+@keyframes transformViewAnimation {
+  0% {}
+}
+
+#testimonialH {
+  color: green;
+  font-size: 2.5em;
+  opacity: 1;
+}
+
+#testSec * {
+  opacity: 0;
+}
+
+#testDesc {
+  text-align: center;
+  display: block;
+  font-size: 1.5em;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 5vh;
+}
+
+#testBox {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  border: .5em solid green;
+  transition: all 1s;
+  padding: 2%;
+  padding-left: 7%;
+  overflow-y: scroll!important;
+  max-height: 70vh;
+}
+
+@media screen and (min-width: 700px) {
+  #testBox:hover {
+    transition: all 1s;
+    border: .5em inset lightgreen;
+    border-radius: 2%;
+    border-right-color: transparent!important;
+    border-left-color: transparent!important;
+  }
+  #testBox:hover::-webkit-scrollbar-thumb {
+    border: .3vw solid rgb(255, 253, 232);
+    border-top-width: 1vw;
+    border-bottom-width: 1vw;
+    visibility: initial;
+  }
+}
+
+#testBox::-webkit-scrollbar {
+  width: 2vw;
+  background-color: inherit;
+}
+
+#testBox::-webkit-scrollbar-thumb {
+  visibility: hidden;
+  transition: visibility 1s;
+  background-color: rgb(93, 154, 93);
+  -background: -webkit-linear-gradient(rgb(93, 154, 93), rgb(144, 238, 144));
+  background: -o-linear-gradient(rgb(93, 154, 93), rgb(144, 238, 144));
+  background: -moz-linear-gradient(rgb(93, 154, 93), rgb(144, 238, 144));
+  background: linear-gradient(rgb(93, 154, 93), rgb(144, 238, 144));
+}
+
+.testPersonLeft,
+.testPersonRight {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.testPersonLeft .testAvatar {
+  margin-top: 2%;
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 20%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.testPersonRight .testAvatar {
+  margin-top: 2%;
+  position: relative;
+  float: right;
+  display: inline-block;
+  width: 20%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.testAvatar img {
+  border: .1em solid green;
+  border-radius: 30%;
+  float: right;
+  width: 100%;
+  height: auto;
+}
+
+.testPersonLeft .testMessage {
+  text-align: left;
+  font-size: 1em;
+  width: 65%;
+  display: inline-block;
+  position: relative;
+  margin: 5%;
+  float: right;
+}
+
+.testPersonRight .testMessage {
+  text-align: right;
+  float: left;
+  font-size: 1em;
+  width: 65%;
+  display: inline-block;
+  position: relative;
+  margin: 5%;
+}
+
+.testName {
+  font-size: 1.2em;
+  color: green;
+}
+
+.fadeIn {
+  animation: fadeInAnimation 2s forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: .1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#testTop {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: inherit;
+  border: none;
+  animation: blink 2s infinite;
+  font-size: 3em;
+  color: red;
+  outline: none!important;
+  border: none!important;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#contactSec {
+  height: calc(100vh - 105px);
+  display: block;
+}
+
+#contactTitle h1 {
+  color: black;
+  font-size: 2.5em;
+}
+
+#location {
+  color: royalblue!important;
+}
+
+#formEmail {
+  margin-bottom: 1%;
+  animation-delay: .5s;
+}
+
+#formMessage {
+  animation-delay: 1s;
+}
+
+#formSubmit {
+  animation-delay: 1.5s;
+  background-color: white;
+  border: .05em solid brown;
+  box-shadow: 0 0 .05em .05m orange;
+}
+
+.customForm {
+  width: 30vw;
+  border: .05em solid orange;
+  box-shadow: 0 0 .05em .05em brown;
+}
+
+.customForm:focus {
+  border: .05em solid rgb(20, 20, 20);
+  box-shadow: 0 0 .05em .05em rgb(40, 40, 40);
+}
+
+.popOut {
+  animation: popOutAnimation .5s forwards;
+}
+
+@keyframes popOutAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#footer {
+  font-size: 2em;
+  margin-bottom: 0;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  background-color: black;
+  position: absolute;
+}
+
+#footer a {
+  color: skyblue!important;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 60%;
+  }
+  #links {
+    display: none;
+  }
+  #mobileDropdown {
+    display: initial;
+  }
+  #parallax1 {
+    position: relative;
+    background: url("http://i347.photobucket.com/albums/p460/jx2bandito/Tacos_zpsnlpge3ci.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: none;
+  }
+  #whoMessage1,
+  #whoMessage2,
+  #helpMessage1,
+  #helpMessage2 {
+    text-align: center!important;
+    float: none;
+    right: 0;
+    left: 0;
+  }
+  #whoMessage2,
+  #helpMessage2 {
+    font-size: .85em;
+  }
+  #testBox {
+    font-size: .5em;
+    border-style: solid!important;
+    border-radius: initial!important;
+    border-right: none!important;
+    border-left: none!important;
+    border-top-color: rgb(93, 154, 93)!important;
+  }
+  #testBox::-webkit-scrollbar-thumb {
+    visibility: initial;
+    border-radius: initial;
+  }
+  #testDesc {
+    font-size: .7em;
+  }
+  #contactSec {
+    height: 100vh;
+  }
+  #contactPitch {
+    font-size: .7em;
+  }
+
+  .parallax {}
+}
+
+@media screen and (max-width: 990px){
+  
+  #formEmail {
+    width: 80vw;
+  }
+  #formMessage {
+    width: 80vw;
+  }
+  
+}
+
+@media screen and (max-width: 1200px) {
+  #headTitle {
+    display: none;
+  }
+  #headTitlePage {
+    display: initial;
+  }
+}
+
+#debug {
+  font-size: 5em;
+  color: red;
+  z-index: 1000000;
+  position: fixed;
+}
+
+
+/* Flex box integration */
+
+#helpContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  width: 98vw;
+  margin: 0 auto;
+  background-color: transparent;
+  text-align: center;
+}
+
+.helpType {
+  width: 33%;
+  min-width: 320px;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 30px;
+  -webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, position;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  color: black;
+}
+
+@media screen and (min-width: 1000px) {
+  #helpContainer:hover .helpType {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity: 0.2;
+  }
+  #helpContainer .helpType:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 1;
+    border: 2px solid rgba(40, 40, 60, .7);
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+#helpContainer img {
+  border-radius: 25%;
+}

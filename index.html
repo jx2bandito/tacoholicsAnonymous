@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Tacoholics Anonymous</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!--Photos are either public domain from pixabay.com or BitMojis sent to me by my friends-->
+
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Tacoholics Anonymous</title>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body ng-app="tacoApp" ng-controller="tacoControl">
+  <div id=debug></div>
+  <header id=mainHeader>
+    <div class=container>
+      <img id=tacoImage width=50px height=50px src=http://i347.photobucket.com/albums/p460/jx2bandito/TA_zpsmrsc2ybo.png>
+      <div id=headTitle>Tacoholics Anonymous</div>
+
+      <div id=links>
+        <button class="btn-lg active menu" id=home>Home</button>
+        <button class="btn-lg menu" id=whoAre>Who We Are</button>
+        <button class="btn-lg menu" id=canHelp>Get Help</button>
+        <button class="btn-lg menu" id=testimonial>Testimonials</button>
+        <button class="btn-lg menu" id=contact>Contact</button>
+      </div>
+
+
+      <div id=mobileDropdown class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id=dropTitle>Navigate Page
+    <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li id=ddHome class=ddList><button class=ddButton>Home</button></li>
+          <li id=ddWho class=ddList><button class=ddButton>Who We Are</button></li>
+          <li id=ddHelp class=ddList><button class=ddButton>Get Help</button></li>
+          <li id=ddTest class=ddList><button class=ddButton>Testimonials</button></li>
+          <li id=ddContact class=ddList><button class=ddButton>Contact</button></li>
+        </ul>
+
+
+      </div>
+
+
+  </header>
+  <br><br><br>
+  <div class=message id=intro>
+    <div id=headTitlePage>
+      <h1>Tacoholics Anonymous</h1></div>
+    <p>Do you suffer from an unhealthy obsession with tacos? </p>
+    <p>Do all other dishes taste bland by comparison, even your previous favorite food? </p>
+    <p>Do you some<span id=switchText>taco</span>s see the word "taco" in places it shouldn't be?
+    </p>
+    <p>Is your motto "<u>#TacoTuesday All Day Every Day</u>"?</p>
+    <p>If this is you, or someone you know, you've come to the right place for help.</p>
+  </div>
+
+  <div id=parallax1 class=parallax></div>
+  <div id=whoWeAre class=message>
+    <span id=whoMessage1>
+    Who Are We?<br>
+    </span>
+    <span id=whoMessage2>
+    <p>We are a Los Angeles-based non-profit organization whose mission is to help people overcome their addiction to tacos. Our team is composed of talented individuals including licensed psychiatrists, award-winning chefs, former tacoholics, professional speakers, life coaches, and more! 
+      </p>
+      </span>
+  </div>
+  <div id=parallax2 class=parallax>
+  </div>
+
+  <div id=weHelp class=message>
+    <span id=helpMessage1>
+      Regain Control Today!
+    </span>
+    <div id=helpContainer>
+
+      <div id="personal" class="helpType">
+
+        <h1>Personalized</h1><br>
+        <img src=https://upload.wikimedia.org/wikipedia/commons/4/45/Duck-Rabbit_illusion.jpg height=200px width=200px>
+        <br>
+        <p>We work together to treat each patient like the unique individual they are! Each treatment is specialized and designed to cater to their needs.</p>
+      </div>
+
+      <div id="group" class="helpType">
+        <h1>Group Meetings</h1>
+        <br>
+        <img src=http://i347.photobucket.com/albums/p460/jx2bandito/Duck%20Group_zpsuwiumnus.jpg height=200px width=200px>
+        <br>
+        <p>However, we also see the importance in being part of a support group. We invite every member to attend weekly TA meetings to share their experiences in a group setting.</p>
+      </div>
+
+      <div id="intervention" class="helpType">
+        <h1>Interventions</h1><br>
+        <img src=http://i347.photobucket.com/albums/p460/jx2bandito/Duck%20Intervention_zpsdiuwlwhd.jpg height=200px width=200px>
+        <br>
+        <p>For drastic measures, we can also arrange an intervention for a loved one. With your co-operation, we can free them of their struggles. Our perfectly-legal methods are 100% proven!</p>
+      </div>
+
+    </div>
+  </div>
+  <div id=testSec class=message>
+    <h1 id=testimonialH>-Testimonials-</h1>
+    <span id=testDesc>These brave Tacoholics/former Tacoholics are shedding their anonymity to bring to light the effectiveness of our program.</span>
+
+    <div id=testBox>
+      <div ng-repeat="testPerson in testPeople">
+
+        <div class="{{testPerson.orientation}} row">
+
+          <div class="testAvatar"><img class='img-responsive' ng-src={{testPerson.image}} width=300 height=300></div>
+
+          <span class="testMessage"><p>{{testPerson.message}}<br><span class=testName>{{testPerson.name}}</span></p>
+          </span>
+
+        </div>
+
+      </div>
+      <button id=testTop>
+          &#8682;
+        </button>
+    </div>
+  </div>
+  <div id=contactSec class=message>
+    <span id=contactTitle><h1>Contact us!</h1></span>
+    <div class=row>
+      <div id=contactPitch class="col-s-12 col-md-6">
+        <p>If you or someone you know suffers from taco addiction, please don't wait! Reach out to us now! <u>The sooner you taco about it, the better!</u> You can find our permanent location at <a href=https://www.google.com/maps/place/Los+Angeles,+CA target="_blank">15525 Flour Boulevard, Los Angeles, CA; cross-street Corn Street</a>.
+          For more information, please fill out the contact form.</p>
+      </div>
+      <form id=contactForm method="POST" action="http://formspree.io/jx2abubo@gmail.com">
+        <input id=formEmail class=customForm type="email" name="email" placeholder="Your email" required><br>
+        <textarea id=formMessage class=customForm name="message" placeholder="Your message" required></textarea><br>
+        <button id=formSubmit class=customForm type="submit">Send</button><br>
+
+      </form>
+    </div>
+  </div>
+  </div>
+  <div id=footer>Created by <a href=#/>JX2Bandito.</a>
+  </div>
+</body>
+
+</html>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
