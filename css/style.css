@@ -242,6 +242,7 @@ p::first-letter {
   height: auto;
 }
 
+
 #whoMessage1,
 #helpMessage2 {
   float: left;
@@ -302,7 +303,7 @@ p::first-letter {
 #testDesc {
   text-align: center;
   display: block;
-  font-size: 1.5em;
+  font-size: 3vw;
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 5vh;
@@ -558,8 +559,11 @@ p::first-letter {
   #helpMessage2 {
     font-size: .85em;
   }
+  #helpContainer p{
+    font-size: 4vw;
+  }
   #testBox {
-    font-size: .5em;
+    font-size: 3.5vw;
     border-style: solid!important;
     border-radius: initial!important;
     border-right: none!important;
@@ -634,6 +638,7 @@ p::first-letter {
   margin: 0 auto;
   background-color: transparent;
   text-align: center;
+  font-size: 2vw;
 }
 
 .helpType {
