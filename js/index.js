@@ -110,8 +110,8 @@ $(document).ready(function() {
     var contactPos = $("#contactSec").offset().top;
     var bodyScroll = $("body").scrollTop() || $("html").scrollTop();
     var bodyHalf = $("body").height()/2;
-    if (Math.abs(whoPos - bodyScroll) <= 500) {
-	    var speed = 800;
+    if (Math.abs(whoPos - bodyScroll) <= 800) {
+	    var speed = 500;
 		$("#whoMessage1").animate({
 			top: 0
 		}, speed);
