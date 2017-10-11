@@ -246,6 +246,7 @@ p::first-letter {
 #whoMessage1{
   float: left;
   position: relative;
+  top: 120vh;
   transform-origin: center;
   z-index: 1;
   margin-left: 10vw;
