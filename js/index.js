@@ -50,7 +50,6 @@ $(document).ready(function() {
         $("html, body").stop().animate({
           scrollTop: scrollTo
         }, speed, easing);
-        $whoWeAre.children().addClass("transformView");
         return false;
       case "canHelp":
         $weHelp.children().addClass("transformView");
@@ -112,7 +111,13 @@ $(document).ready(function() {
     var bodyScroll = $("body").scrollTop() || $("html").scrollTop();
     var bodyHalf = $("body").height()/2;
     if (Math.abs(whoPos - bodyScroll) <= 500) {
-      $whoWeAre.children().addClass("transformView");
+	    var speed = 800;
+		$("#whoMessage1").animate({
+			top: 0
+		}, speed);
+		$("#whoMessage2").animate({
+			left: 0
+		}, speed);
     }
     /*if (Math.abs(helpPos - bodyScroll) <= 500) {
       $weHelp.children().addClass("transformView");

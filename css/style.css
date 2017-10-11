@@ -242,14 +242,12 @@ p::first-letter {
   height: auto;
 }
 
-#whoMessage1,
-#helpMessage2 {
+
+#whoMessage1{
   float: left;
   position: relative;
-  top: 0;
+  top: 120vh;
   transform-origin: center;
-  transform: translate3d(101vw, 0, 0);
-  transition: all 1s ease-out;
   z-index: 1;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -259,35 +257,26 @@ p::first-letter {
   color: royalblue;
   left: 5vw;
   font-size: 2.5em;
-  transform: translate3d(0, 40vw, 0);
 }
 
 #helpMessage1 {
   color: royalblue;
   font-size: 2.5em;
+  
 }
 
 #whoMessage2 {
   float: right;
   position: relative;
-  transform-origin: center;
-  transform: translate3d(-101vw, 0, 0);
+  left: 140vw;
   margin-left: 10vw;
   margin-right: 10vw;
-  transition: all 1s ease-out;
   z-index: 1;
 }
 
 #helpMessage1 {}
 
-.transformView {
-  position: relative!important;
-  transform: none!important;
-}
 
-@keyframes transformViewAnimation {
-  0% {}
-}
 
 #testimonialH {
   color: green;
@@ -302,7 +291,7 @@ p::first-letter {
 #testDesc {
   text-align: center;
   display: block;
-  font-size: 1.5em;
+  font-size: 3vw;
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 5vh;
@@ -315,7 +304,6 @@ p::first-letter {
   width: auto;
   height: auto;
   border: .5em solid green;
-  transition: all 1s;
   padding: 2%;
   padding-left: 7%;
   overflow-y: scroll!important;
@@ -324,7 +312,6 @@ p::first-letter {
 
 @media screen and (min-width: 700px) {
   #testBox:hover {
-    transition: all 1s;
     border: .5em inset lightgreen;
     border-radius: 2%;
     border-right-color: transparent!important;
@@ -545,21 +532,15 @@ p::first-letter {
     background-repeat: no-repeat;
     animation: none;
   }
-  #whoMessage1,
-  #whoMessage2,
-  #helpMessage1,
-  #helpMessage2 {
-    text-align: center!important;
-    float: none;
-    right: 0;
-    left: 0;
-  }
   #whoMessage2,
   #helpMessage2 {
     font-size: .85em;
   }
+  #helpContainer p{
+    font-size: 4vw;
+  }
   #testBox {
-    font-size: .5em;
+    font-size: 3.5vw;
     border-style: solid!important;
     border-radius: initial!important;
     border-right: none!important;
@@ -581,6 +562,13 @@ p::first-letter {
   }
 
   .parallax {}
+}
+
+
+@media screen and (max-width: 768px){
+	.parallax{
+		height: 50vh;
+	}
 }
 
 @media screen and (max-width: 990px){
@@ -634,6 +622,7 @@ p::first-letter {
   margin: 0 auto;
   background-color: transparent;
   text-align: center;
+  font-size: 2vw;
 }
 
 .helpType {
@@ -658,6 +647,7 @@ p::first-letter {
     transform: scale(0.95);
     opacity: 0.2;
   }
+  
   #helpContainer .helpType:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
