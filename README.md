@@ -1,8 +1,7 @@
 # Tacoholics Anonymous
  
  This was an attempt to make a single-page website. When it came down to it, this project was less about elegance and more about experimenting with different technologies. There are scroll 
- animations using jQuery and CSS, there are weird linear-gradient backgrounds, there are scrollbar modifications that only appear in Chrome, there's
- a  there's a cheeky and totally unnecessary bit of Angular 1 code, there are background images that have weird parallax effects (except on Safari-based browsers) and there are drop-down navigation links 
+ animations using jQuery and CSS, there are weird linear-gradient backgrounds, there are scrollbar modifications that only appear in Chrome, there are cheeky and totally unnecessary bits of Angular 1 code, there are background images that have static parallax effects (except on Safari-based browsers) and there are drop-down navigation links 
  instead of a hamburger button for the small-screen version. Definitely a weird project -- and it exists because of a pun. 
  <br/><br/>
  Project page: https://jx2bandito.github.io/tacoholicsAnonymous
