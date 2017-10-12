@@ -16,5 +16,5 @@
 
 
 *Side note: The goal was to have each heading of the sections line-up to the top of the page when clicking on a navigation link. I'm bothered by 
-single page websites that leave you halfway through another section when you click 'Contact', then present their Contact info at the very bottom of the page. 
+single page websites that leave you halfway through another section when you click 'Contact', then present their Contact section at the very bottom of the page. 
 According to eye-tracking research, people browse screens with an "F" pattern. Important information should at least be at eye-level.
