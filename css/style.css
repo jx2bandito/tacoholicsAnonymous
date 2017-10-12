@@ -302,12 +302,12 @@ p::first-letter {
   display: inline-block;
   margin: 0 auto;
   width: auto;
-  height: auto;
+  height: 55vh;
   border: .5em solid green;
   padding: 2%;
   padding-left: 7%;
   overflow-y: scroll!important;
-  max-height: 70vh;
+  transition: all 1s, width 0s, height 0s;
 }
 
 @media screen and (min-width: 700px) {
@@ -316,6 +316,7 @@ p::first-letter {
     border-radius: 2%;
     border-right-color: transparent!important;
     border-left-color: transparent!important;
+	
   }
   #testBox:hover::-webkit-scrollbar-thumb {
     border: .3vw solid rgb(255, 253, 232);
